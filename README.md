@@ -1,1 +1,1 @@
-"# primer intento de crud web en python usando django" 
+"primer intento de crud web en python usando django" 
