@@ -1,10 +1,9 @@
 {% load static %}
 
 <!doctype html>
-<html lang="es">
+<html lang="en">
 
 <head>
-
   <title>{% block titulo %} {% endblock %} </title>
   <!-- Required meta tags -->
   <meta charset="utf-8">
@@ -18,27 +17,29 @@
 
 <body>
 
-    <nav class="navbar navbar-expand navbar-light bg-light">
-        <div class="nav navbar-nav">
-            <a class="nav-item nav-link active" href="#" aria-current="page">Inicio</a>
-            <a class="nav-item nav-link active" href="#" aria-current="page">Libros</a>
-            <a class="nav-item nav-link active" href="#" aria-current="page">Nosotros</a>
-        </div>
-    </nav>
+  <nav class="navbar navbar-expand navbar-light bg-light">
+      <div class="nav navbar-nav">
+          <a class="nav-item nav-link active" href="{% url 'inicio' %}" aria-current="page">Inicio</a>
+          <a class="nav-item nav-link active" href="{% url 'libros' %}" aria-current="page">Libros</a>
+          <a class="nav-item nav-link active" href="{% url 'nosotros' %}" aria-current="page">Nosotros</a>
+          
+      </div>
+  </nav>
 
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                {% block contenido %} {% endblock %}
-                
-            </div>
-        </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        {% block contenido %} {% endblock %}
+
+
+      </div>
+
     </div>
+  </div>
 
-    
-  
-  
-  <!-- Bootstrap JavaScript Libraries -->
+
+
+
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
     integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
   </script>
